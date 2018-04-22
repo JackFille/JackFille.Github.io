@@ -5,10 +5,10 @@ body {
 
 a {
 	text-decoration: none;
-	color: red;
+	color: coral;
 }
 
-h1 {
+h1, h2, h3 {
 	margin: 0;
 }
 
@@ -20,8 +20,12 @@ h1 {
 }
 
 #header {
+	background-color: coral;
 	color: white;
 	text-align: center;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	padding: 10px;
 }
 
 #content {
@@ -33,25 +37,26 @@ h1 {
 	float: left;
 }
 
+#nav .selected {
+	font-weight: bold;
+}
+
+#nav ul {
+	list-style-type: none;
+	padding: 0px;
+}
+
 #main {
-	background-color: #FFEECC;
 	width: 600px;
 	float: right;
 }
 
 #footer {
 	clear: both;
-	background-color: grey;
-	text-align: right;
-	color: white;
 	padding: 10px;
-}
-
-#nav ul {
-	list-style-type: none;
-	padding: 0;
-}
-
-#nav .selected {
-	font-weight: bold;
+	background-color: coral;
+	color: white;
+	text-align: right;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
 }

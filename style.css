@@ -1,7 +1,6 @@
 html {
     width: 100vw;
     height: 100vh;
-    overflow: hidden;
 }
 
 body {
@@ -13,6 +12,7 @@ body {
     position: absolute;
     min-width: 300px;
     min-height: 600px;
+    overflow: hidden;
 }
 
 #wrapper {

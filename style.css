@@ -1,48 +1,184 @@
+@import url('https://fonts.googleapis.com/css?family=Nanum+Gothic&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+
 html {
-    width: 100vw;
-    height: 100vh;
+  scroll-behavior: smooth;
 }
+
 
 body {
-    font-family: Georgia, arial;
-    font-size: 24px;
-    margin: 0;
-    width: 100vw;
-    height: 100vh;
-    position: absolute;
-    min-width: 300px;
-    min-height: 600px;
-    overflow: hidden;
+  background-color: #FFF;
+  font-family: 'Muli', sans-serif;
+  width: 100;
+  margin: 0;
+  padding: 0;
+  color: white;
 }
 
-#wrapper {
-    width: 100%;
-    height: 100%;
-    text-align: center;
+body::-webkit-scrollbar {
+  display: none;
 }
 
-#logo {
-    display: block;
-    margin: auto;
-    margin-top: 35vh;
-    max-width: 100%;
-    height: auto;
+a {
+  text-decoration: none;
+  color: #fff;
 }
 
-#social-media {
-    position: absolute;
-    margin: auto;
-    width: 100%;
+#ccInfo {
+  color: #fff;
+  padding: 7px;
+  border-width: 3px;
+  border-style: solid;
+  border-image: linear-gradient(to right, #009FFF, #ec2F4B) 1 1%;
+  background-color: rgba(255,255,255,0);
+  font-size: 13pt;
 }
 
-#social-media img {
-    transition: 0.4s;
-    border-radius: 31px;
-    background-color: none;
+.top-dark {
+  background-color: rgb(32,32,32);
+  color: #fff;
+  height: 100px;
+  text-align: right;
 }
 
-#social-media img:hover {
-    transition: 0.2s;
-    border-radius: 36px;
-    background-color: grey;
+
+#headerImg {
+  width: 125px;
+  height: 125px;
+  border-width: 3px;
+  border-style: solid;
+  border-image: linear-gradient(to right, #009FFF, #ec2F4B) 1 1%;
+  background-color: #000;
+  margin-left: 25px;
+  margin-top: 25px;
+  position: absolute;
+  line-height: 125px;
+  text-align: center;
+  font-size: 1.8em;
+  font-weight: bolder;
+}
+
+#topBtnCont {
+}
+
+.topBtn {
+  transition-duration: 0.3s;
+  display: inline-block;
+  height: 100px;
+  width: 200px;
+  line-height: 100px;
+  text-align: center;
+  font-size: 1.2em;
+}
+
+.topBtn:hover {
+  background-color: coral;
+  font-size: 1.8em;
+}
+
+.undrLink {
+  display: inline-block;
+  font-weight: bolder;
+  background: linear-gradient(to right, #009FFF, #ec2F4B);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.undrLink:after {
+  content: '';
+  width: 0px;
+  height: 1px;
+  display: block;
+  background: #fff;
+  transition: 0.6s;
+}
+
+.undrLink:hover:after {
+  width: 100%;
+}
+
+#main-container {
+  display: flex;
+  flex-direction: space-evenly;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 1000px;
+  background-image: url('img/seemless.jpg');
+  background-size: 250px;
+  background-repeat: repeat;
+  background-position: bottom;
+  background-attachment: fixed;
+}
+
+#second-container {
+  display: flex;
+  flex-direction: space-evenly;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 1000px;
+  background-image: url('img/seemless-dark.jpg');
+  background-size: 250px;
+  background-repeat: repeat;
+  background-position: bottom;
+  background-attachment: fixed;
+}
+
+.card-dark {
+  display: inline-block;
+  text-align: center;
+  width: 350px;
+  height: 350px;
+  border-width: 3px;
+  border-style: solid;
+  border-image: linear-gradient(to right, #009FFF, #ec2F4B) 1 1%;
+  background-color: rgb(32,32,32);
+}
+
+.cardHeader-dark {
+  width: 350px;
+  height: 75px;
+  background-color: #000;
+  line-height: 75px;
+  font-size: 1.5em;
+}
+
+.card-light {
+  color: #000;
+  display: inline-block;
+  text-align: center;
+  width: 350px;
+  height: 350px;
+  border-width: 3px;
+  border-style: solid;
+  border-image: linear-gradient(to right, #009FFF, #ec2F4B) 1 1%;
+  background-color: rgb(242, 242, 242);
+}
+
+.cardHeader-light {
+  color: #000;
+  width: 350px;
+  height: 75px;
+  background-color: rgb(224, 224, 224);
+  line-height: 75px;
+  font-size: 1.5em;
+}
+
+.middle-dark {
+  background-color: rgb(32,32,32);
+  padding-top: 25px;
+  text-align: center;
+  font-size: 1.2em;
+  padding: 150px 15px;
+}
+
+.bottom-dark {
+  background-color: rgb(32,32,32);
+  padding-top: 25px;
+  text-align: center;
+  font-size: 1.2em;
+  padding: 50px 15px;
+}
+
+#about {
+  font-size: 1.8em;
 }

@@ -1,22 +1,55 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Home « Jack Fillingham</title>
-        <link rel="stylesheet" href="style.css">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    </head>
+  <head>
+    <title>Test Site</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+  <script>
+    function copyClip() {
+      var copyText = document.getElementById("ccInfo");
 
-    <body>
-        <section id="wrapper">
-            <img id="logo" src="img/logo.png">
-            <p>Hello, I am Jack. Welcome to my website.</p>
-            <div id="social-media">
-                <a href="/" onclick='window.open("https://www.youtube.com/channel/UCFfZsVEfwUYK6JqMTYWAvCA");return false;'><img src="img/youtube.png" width="75px" height="75px"></a>
-                <a href="/" onclick='window.open("https://twitter.com/Jack_Fille");return false;'><img src="img/twitter.png" width="75px" height="75px"></a>
-                <a href="/" onclick='window.open("https://www.instagram.com/rjackteaspoon/");return false;'><img src="img/instagram.png" width="75px" height="75px"></a>
-            </div>
-        </section>
-    </body>
+      copyText.select();
+      copyText.setSelectionRange(0, 99999);
 
-    <!-- Copyright Jack Fillingham, 2019 -->
+      document.execCommand("copy");
+      alert("Copied the text: " + copyText.value);
+    }
+  </script>
+    <div class="top-dark">
+      <div id="headerImg">site.</div>
+      <div id="topBtnCont">
+        <a href="#"><div class="topBtn">home</div></a>
+        <a href="#about"><div class="topBtn">about</div></a>
+        <a href="#portfolio"><div class="topBtn">portfolio</div></a>
+        <a href="#contact"><div class="topBtn">contact</div></a>
+      </div>
+    </div>
+
+    <div id="main-container">
+      <div class="card-dark"><div class="cardHeader-dark">Card Header</div></div>
+      <div class="card-dark"><div class="cardHeader-dark">Card Header</div></div>
+      <div class="card-dark"><div class="cardHeader-dark">Card Header</div></div>
+    </div>
+
+    <div class="middle-dark" id="about">
+      <span id="about">About me</span>
+      <p>My name is Jack Fillingham, and I am a college student who is currently studying Level 2 Computing and Wigan and Leigh College.<br/>
+        <br>At the end of my course I aim to achieve a merit 2 or above, and then progess onto learning higher level computing, e.g. Level 3 Computing.<br>
+        <br>I also am taking English Language re-sit GCSE, and my predicted Grade is around a grade 6-7; although this can change throughout my course.
+      </p>
+      <p>Download <span class="undrLink"><a href="mycv.docx">my CV.</a></span></p>
+    </div>
+    <div id="second-container">
+      <div class="card-light"><div class="cardHeader-light">Project 1</div></div>
+      <div class="card-light"><div class="cardHeader-light">Project 2</div></div>
+      <div class="card-light"><div class="cardHeader-light">Project 3</div></div>
+    </div>
+    <div class="bottom-dark" id="portfolio">
+      <span id="contact">Contact me</span>
+      <p>College E-Mail: <span id="ccInfo">U10429983@wigan-leigh.ac.uk</span>
+        <p>Personal E-Mail: <span id="ccInfo">jfillinghampro@gmail.com</span>
+      <p>Download <span class="undrLink"><a href="mycv.docx">my CV.</a></span></p>
+    </div>
+  </body>
 </html>
